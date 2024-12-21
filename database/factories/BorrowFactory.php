@@ -23,7 +23,7 @@ class BorrowFactory extends Factory
             'book_id' => Book::all()->random()->id,
             'borrow_date' => $this->faker->dateTimeBetween('-1 year', 'now'),
             'return_date' => $this->faker->dateTimeBetween('now', '+1 month'),
-            'status' => $this->faker->boolean(50), // 50% trả, 50% đang mượn
+            'status' => $this->faker->randomElement(['borrowed', 'returned']),
         ];
     }
 }

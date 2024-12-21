@@ -1,3 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* General container styling */
+.container {
+    margin-top: 20px;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Ensure all borders connect seamlessly */
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add horizontal and vertical borders */
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Add distinct vertical lines between columns */
+.table th, .table td {
+    border-right: 1px solid #bbb; /* Vertical lines between columns */
+}
+
+.table th:last-child, .table td:last-child {
+    border-right: none; /* Remove the border on the last column */
+}
+
+/* Row styling */
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Styling for action buttons */
+.table td .btn {
+    margin-right: 5px;
+}
+
+/* Add spacing between buttons */
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Form styling */
+form {
+    display: inline-block;
+}
+
